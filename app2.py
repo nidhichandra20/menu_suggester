@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from groq import Groq
 
 # Load environment variables
-load_dotenv()
+
 api_key = os.getenv("Grok_API_KEY")
 
 client = Groq(api_key=api_key)
@@ -55,4 +55,5 @@ if st.button("Send"):
         st.write(response)
         
     else:
+
         st.warning("Please enter a message to continue.")
